@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+
+# Static files
+public/
+
+# Environment variables
+.env.local
+.env*.local
+
+# Claude prompt
+claude.md
+
+
