@@ -4,8 +4,6 @@ node_modules/
 # Next.js build output
 .next/
 
-# Static files
-public/
 
 # Environment variables
 .env.local
