@@ -22,8 +22,8 @@ const contactInfo = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    value: "dhaval-patel-065563231",
-    href: "https://www.linkedin.com/in/dhaval-patel-065563231/",
+    value: "dhavalp210",
+    href: "https://www.linkedin.com/in/dhavalp210/",
     color: "blue",
   },
   {
