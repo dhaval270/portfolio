@@ -5,7 +5,7 @@ import { ExternalLink, BarChart3, Cpu } from "lucide-react";
 
 const projects = [
   {
-    title: "Invoice Management System",
+    title: "Inventory Management System",
     icon: BarChart3,
     description:
       "Built an end-to-end invoice extraction and management system using OCR and Qwen VLM for accurate data capture, with a Flask backend, Next.js frontend, and Supabase storage. Features interactive Plotly dashboards for real-time expense tracking.",
