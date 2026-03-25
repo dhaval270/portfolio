@@ -165,7 +165,7 @@ export default function Hero() {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/dhaval-patel-065563231/"
+            href="https://www.linkedin.com/in/dhavalp210/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-white/50 hover:text-white transition-all duration-200 group"
