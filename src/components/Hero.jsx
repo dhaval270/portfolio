@@ -94,7 +94,7 @@ export default function Hero() {
           custom={2}
           className="text-lg sm:text-xl lg:text-2xl font-medium text-white/70 mb-6"
         >
-          MS Computer Science Student &nbsp;·&nbsp; AI/ML Engineer &nbsp;·&nbsp; Full-Stack Developer
+          MS Computer Science Student &nbsp;·&nbsp; AI/ML Engineer 
         </motion.p>
 
         {/* Intro */}
