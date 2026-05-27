@@ -1,11 +1,44 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, BarChart3, Cpu } from "lucide-react";
+import { ExternalLink, BarChart3, Cpu, LayoutDashboard, ScanSearch } from "lucide-react";
 
 const projects = [
   {
-    title: "Inventory Management System",
+    title: "Sales Management Platform",
+    icon: LayoutDashboard,
+    description:
+      "Digitalized the entire distributor workflow — replacing manual notebooks for sales, stock entries, and membership tracking with a real-time platform. Features dashboard analytics, low-stock alerts, volume point tracking, and printable period reports for profits, revenue, and inventory.",
+    metrics: [
+      { value: "Next.js 14", label: "full-stack framework" },
+      { value: "End-to-End", label: "workflow digitalization" },
+    ],
+    tech: ["Next.js 14", "Supabase", "TypeScript", "Tailwind CSS"],
+    gradient: "from-violet-500/20 to-purple-500/10",
+    accentColor: "violet",
+    badgeColor: "border-violet-500/30 text-violet-400 bg-violet-500/5",
+    metricColor: "text-violet-400",
+    projectLink: "https://github.com/dhaval270/sales_manage",
+  },
+  {
+    title: "Robust Anomaly Detection",
+    subtitle: "ML Research",
+    icon: ScanSearch,
+    description:
+      "Investigated robustness of industrial anomaly detection models (PaDiM, PatchCore) on Wide-ResNet-50 against real-world image corruptions across 5 severity levels on the MVTec AD dataset. Revealed critical gaps where ROC-AUC collapsed to 0.36 under brightness corruption.",
+    metrics: [
+      { value: "30%", label: "robustness improvement" },
+      { value: "0.61→0.79", label: "Gaussian noise AUC lift" },
+    ],
+    tech: ["PaDiM", "PatchCore", "Wide-ResNet-50", "PyTorch", "MVTec AD", "Data Augmentation"],
+    gradient: "from-emerald-500/20 to-teal-500/10",
+    accentColor: "emerald",
+    badgeColor: "border-emerald-500/30 text-emerald-400 bg-emerald-500/5",
+    metricColor: "text-emerald-400",
+    projectLink: "https://github.com/dhaval270/anomaly_detection",
+  },
+  {
+    title: "Invoice Management System",
     icon: BarChart3,
     description:
       "Built an end-to-end invoice extraction and management system using OCR and Qwen VLM for accurate data capture, with a Flask backend, Next.js frontend, and Supabase storage. Features interactive Plotly dashboards for real-time expense tracking.",
@@ -83,7 +116,13 @@ export default function Projects() {
                 {/* Glow border on hover */}
                 <div
                   className={`absolute inset-0 rounded-xl border opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
-                    project.accentColor === "cyan" ? "border-cyan-500/40 shadow-glow" : "border-blue-500/40 shadow-glow-blue"
+                    project.accentColor === "cyan"
+                      ? "border-cyan-500/40 shadow-glow"
+                      : project.accentColor === "violet"
+                      ? "border-violet-500/40"
+                      : project.accentColor === "emerald"
+                      ? "border-emerald-500/40"
+                      : "border-blue-500/40 shadow-glow-blue"
                   }`}
                 />
 
@@ -92,7 +131,13 @@ export default function Projects() {
                   <div className="flex items-start gap-4 mb-4">
                     <div
                       className={`w-11 h-11 rounded-xl bg-gradient-to-br ${
-                        project.accentColor === "cyan" ? "from-cyan-500 to-blue-500" : "from-blue-500 to-purple-500"
+                        project.accentColor === "cyan"
+                          ? "from-cyan-500 to-blue-500"
+                          : project.accentColor === "violet"
+                          ? "from-violet-500 to-purple-600"
+                          : project.accentColor === "emerald"
+                          ? "from-emerald-500 to-teal-600"
+                          : "from-blue-500 to-purple-500"
                       } flex items-center justify-center flex-shrink-0 shadow-glow group-hover:scale-110 transition-transform duration-300`}
                     >
                       <Icon size={20} className="text-white" />
@@ -141,6 +186,10 @@ export default function Projects() {
                       className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                         project.accentColor === "cyan"
                           ? "bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 hover:bg-cyan-500/20"
+                          : project.accentColor === "violet"
+                          ? "bg-violet-500/10 text-violet-400 border border-violet-500/30 hover:bg-violet-500/20"
+                          : project.accentColor === "emerald"
+                          ? "bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500/20"
                           : "bg-blue-500/10 text-blue-400 border border-blue-500/30 hover:bg-blue-500/20"
                       }`}
                     >

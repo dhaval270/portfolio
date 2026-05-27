@@ -5,29 +5,30 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 
 const experiences = [
   {
-    role: "AI/ML Intern",
-    company: "Cilans Systems",
+    role: "AI/ML Engineer",
+    company: "Cilans System",
     location: "Ahmedabad, India",
     period: "Oct 2024 – Jun 2025",
     type: "Industry",
     color: "cyan",
     bullets: [
-      "Designed document parsing pipelines using <b>OpenAI</b> and <b>Gemini API</b> for automated text extraction, multilingual language detection, and contextual understanding",
-      "Integrated <b>Azure Cosmos DB</b> for semantic search and RAG-based Q&A over multilingual documents",
-      "Reduced document processing time by <metric>47%</metric> by optimizing LLM prompts and retrieval strategies",
-      "Built AI-powered summarization and contextual Q&A integrated with Azure pipelines, improving efficiency by <metric>63%</metric>",
-      "Enhanced image quality using <b>OpenCV</b> and <b>YOLO</b> models, resulting in <metric>14%</metric> increase in image quality",
+      "Built and optimized document parsing pipelines for the <b>GranthAI</b> platform using <b>OpenAI</b> and <b>Gemini APIs</b>, automating text extraction, multilingual language detection, and contextual content understanding across digitized documents.",
+      "Integrated <b>Azure Cosmos DB</b> with scalable search and retrieval workflows, enabling efficient semantic search and RAG-based question answering over uploaded multilingual documents while supporting dynamic data management.",
+      "Reduced end-to-end document processing time by <metric>47%</metric> by refining LLM prompts, improving retrieval strategies, and streamlining workflow orchestration, resulting in faster and more accurate document analysis.",
+      "Designed and deployed an intelligent text summarization and contextual Q&A pipeline by combining Azure-based data workflows with OCR and retrieval components, improving the relevance and quality of generated responses.",
+      "Enhanced document image quality by <metric>14%</metric> using <b>OpenCV</b> preprocessing techniques (denoising, contrast enhancement etc.) and <b>YOLO</b>-based region-of-interest detection, leading to more reliable OCR text extraction on noisy scanned documents.",
     ],
   },
   {
     role: "Research Intern",
-    company: "CHARUSAT",
-    location: "Changa, India",
-    period: "May 2024 – Jun 2024",
+    company: "Charotar University of Science and Technology (CHARUSAT)",
+    location: "Anand, India",
+    period: "May 2024 – Jul 2024",
     type: "Research",
     color: "blue",
     bullets: [
-      "Improved construction resource estimation accuracy by <metric>24%</metric> using OCR-based floor plan dimensional data extraction",
+      "Streamlined construction resource estimation accuracy by <metric>24%</metric> by extracting dimensional information from floor plan images using OCR and optimizing material requirement calculations for greater precision and efficiency.",
+      "Co-authored and published <metric>3 research papers</metric> on applied deep learning, presenting findings on BERT-based cognitive skill evaluation, YOLOv8-driven real-time activity detection, and novel approaches to improving model accuracy, efficiency, and real-world applicability across educational and sports analytics domains.",
     ],
   },
   {
@@ -38,7 +39,7 @@ const experiences = [
     type: "Industry",
     color: "purple",
     bullets: [
-      "Achieved <metric>92% accuracy</metric> (vs. <b>83% baseline</b>) using <b>TensorFlow/Keras</b> deep learning models",
+      "Achieved <metric>92% model accuracy</metric>, outperforming the <metric>83% baseline</metric> from traditional machine learning approaches, by developing <b>TensorFlow/Keras</b>-based deep learning models and improving feature engineering and data preprocessing pipelines.",
     ],
   },
 ];

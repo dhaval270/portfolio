@@ -13,7 +13,7 @@ const skillGroups = [
     bgColor: "bg-cyan-500/5",
     hoverBg: "hover:bg-cyan-500/15",
     iconBg: "from-cyan-500 to-cyan-600",
-    skills: ["Python", "R", "C++", "HTML", "CSS", "Node.js"],
+    skills: ["Python", "R", "C++", "HTML", "CSS", "SQL", "Javascript", "Node.js"],
   },
   {
     category: "ML / AI",
@@ -34,10 +34,12 @@ const skillGroups = [
       "Statistics",
       "Predictive Modeling",
       "Time Series Analysis",
+      "Data Wrangling",
       "Feature Engineering",
       "Model Deployment",
       "Hyperparameter Tuning",
       "Cross-Validation",
+      "Prompt Engineering",
     ],
   },
   {
@@ -58,6 +60,7 @@ const skillGroups = [
       "TensorFlow",
       "PyTorch",
       "Keras",
+      "Transformers",
       "FastAPI",
       "LangChain",
       "OpenAI",
@@ -74,7 +77,7 @@ const skillGroups = [
     bgColor: "bg-teal-500/5",
     hoverBg: "hover:bg-teal-500/15",
     iconBg: "from-teal-500 to-cyan-600",
-    skills: ["Git", "Docker", "AWS EC2", "AWS S3", "Microsoft Azure"],
+    skills: ["Git", "Docker", "AWS (EC2, S3)", "Microsoft Azure", "Claude Code"],
   },
 ];
 
