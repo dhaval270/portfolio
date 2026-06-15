@@ -5,7 +5,7 @@ import { ExternalLink, BarChart3, Cpu, LayoutDashboard, ScanSearch } from "lucid
 
 const projects = [
   {
-    title: "Sales Management Platform",
+    title: "Sales & Inventory Digitalization System",
     icon: LayoutDashboard,
     description:
       "Digitalized the entire distributor workflow — replacing manual notebooks for sales, stock entries, and membership tracking with a real-time platform. Features dashboard analytics, low-stock alerts, volume point tracking, and printable period reports for profits, revenue, and inventory.",
