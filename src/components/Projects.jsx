@@ -1,11 +1,28 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, BarChart3, Cpu, LayoutDashboard, ScanSearch } from "lucide-react";
+import { ExternalLink, BarChart3, Cpu, LayoutDashboard, ScanSearch, Bot } from "lucide-react";
 
 const projects = [
   {
-    title: "Sales & Inventory Digitalization System",
+    title: "LedgerLens — Agentic Personal Finance Analyst",
+    subtitle: "LLM Agents",
+    icon: Bot,
+    description:
+      "Built a multi-node LangGraph agent that decomposes natural-language finance questions, routes across SQL / semantic / statistical tools, and self-corrects failed queries — with 100% first-attempt SQL validity and correct refusal of all 7 deliberately unanswerable benchmark queries. A deterministic verification node rejects answers whose figures don't trace back to a retrieved row, surfacing hallucinated financial totals instead of passing them silently (100% catch rate on 126 injected wrong numbers, 0 false rejections).",
+    metrics: [
+      { value: "80.4%", label: "execution accuracy across 46 queries" },
+      { value: "100%", label: "hallucination catch rate, 0 false rejections" },
+    ],
+    tech: ["LangGraph", "LLM Agents", "SQL", "RAG", "Python", "Evaluation"],
+    gradient: "from-amber-500/20 to-orange-500/10",
+    accentColor: "amber",
+    badgeColor: "border-amber-500/30 text-amber-400 bg-amber-500/5",
+    metricColor: "text-amber-400",
+    projectLink: "https://github.com/dhaval270/ledgerlens",
+  },
+  {
+    title: "DistroTrack — Distributor Management Platform",
     icon: LayoutDashboard,
     description:
       "Digitalized the entire distributor workflow — replacing manual notebooks for sales, stock entries, and membership tracking with a real-time platform. Features dashboard analytics, low-stock alerts, volume point tracking, and printable period reports for profits, revenue, and inventory.",
@@ -122,6 +139,8 @@ export default function Projects() {
                       ? "border-violet-500/40"
                       : project.accentColor === "emerald"
                       ? "border-emerald-500/40"
+                      : project.accentColor === "amber"
+                      ? "border-amber-500/40"
                       : "border-blue-500/40 shadow-glow-blue"
                   }`}
                 />
@@ -137,6 +156,8 @@ export default function Projects() {
                           ? "from-violet-500 to-purple-600"
                           : project.accentColor === "emerald"
                           ? "from-emerald-500 to-teal-600"
+                          : project.accentColor === "amber"
+                          ? "from-amber-500 to-orange-600"
                           : "from-blue-500 to-purple-500"
                       } flex items-center justify-center flex-shrink-0 shadow-glow group-hover:scale-110 transition-transform duration-300`}
                     >
@@ -190,6 +211,8 @@ export default function Projects() {
                           ? "bg-violet-500/10 text-violet-400 border border-violet-500/30 hover:bg-violet-500/20"
                           : project.accentColor === "emerald"
                           ? "bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500/20"
+                          : project.accentColor === "amber"
+                          ? "bg-amber-500/10 text-amber-400 border border-amber-500/30 hover:bg-amber-500/20"
                           : "bg-blue-500/10 text-blue-400 border border-blue-500/30 hover:bg-blue-500/20"
                       }`}
                     >
